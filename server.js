@@ -33,7 +33,7 @@ let redirect_url
 
 if (process.env.NODE_ENV === 'production') {
   var redirect = process.env.redirect
-  // redirect_uri = redirect + 'callback/'
+  redirect_uri = redirect
   redirect_url = redirect + '?'
   var client_id = process.env.client_id
   var client_secret = process.env.client_secret
